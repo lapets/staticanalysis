@@ -20,5 +20,4 @@ class Analysis a where
   unanalyzed :: a
 
 
-
 --eof

@@ -14,12 +14,14 @@
 module StaticAnalysis.Annotated
   where
 
+import StaticAnalysis.Analysis
+
 ----------------------------------------------------------------
 -- Interface for abstract syntax data structures.
 
 class Annotated d where
-  annotate :: d a -> a -> d a
-  annotation :: d a -> a
+  annotate :: Analysis a => d a -> a -> d a
+  annotation :: Analysis a => d a -> a
 
 
 
