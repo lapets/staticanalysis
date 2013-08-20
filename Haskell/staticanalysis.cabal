@@ -1,5 +1,5 @@
 Name:              staticanalysis
-Version:           0.0.0.1
+Version:           0.0.0.2
 Cabal-Version:     >= 1.6
 License:           GPL-3
 License-File:      LICENSE
@@ -13,7 +13,8 @@ Build-Type:        Simple
 Library
   Exposed-Modules: StaticAnalysis.All,
                    StaticAnalysis.Analysis,
-                   StaticAnalysis.Annotated
+                   StaticAnalysis.Annotate,
+                   StaticAnalysis.Analyze
   Build-Depends:   base >= 3 && < 5,
                    MissingH
 

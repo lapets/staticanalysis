@@ -1,8 +1,9 @@
 ----------------------------------------------------------------
 --
--- StaticAnalysis
+-- | StaticAnalysis
 --
--- StaticAnalysis/Annotated.hs
+-- @StaticAnalysis\/Annotate.hs@
+--
 --   Interface for abstract syntax data structures in which
 --   every node can be annotated with a data structure that
 --   represents static analysis results.
@@ -11,16 +12,17 @@
 ----------------------------------------------------------------
 -- 
 
-module StaticAnalysis.Annotated
+module StaticAnalysis.Annotate
   where
 
 import StaticAnalysis.Analysis
 
 ----------------------------------------------------------------
--- Interface for abstract syntax data structures.
+-- | Interface for abstract syntax data structures that can be
+--   annotated.
 
-class Annotated d where
-  annotate :: Analysis a => d a -> a -> d a
+class Annotate d where
+  annotate :: Analysis a => a -> d a -> d a
   annotation :: Analysis a => d a -> a
 
 
