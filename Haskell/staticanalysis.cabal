@@ -1,13 +1,13 @@
 Name:              staticanalysis
 Version:           0.0.0.4
 Cabal-Version:     >= 1.6
-License:           GPL-3
+License:           MIT
 License-File:      LICENSE
 Synopsis:          Reusable static analysis interfaces and modules.
 Description:       Reusable static analysis interfaces and modules.
 Category:          Compilers/Interpreters, Language
 Author:            Andrei Lapets
-Maintainer:        Andrei Lapets <lapets@bu.edu>
+Maintainer:        Andrei Lapets <a@lapets.io>
 Build-Type:        Simple
 
 Library
